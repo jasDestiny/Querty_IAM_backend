@@ -1,0 +1,35 @@
+[33mcommit b9fe08bba9c925f82093ca8d702a2c0ca8675a64[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: jasDestiny <jasboson@gmail.com>
+Date:   Sun Oct 17 18:57:04 2021 +0530
+
+    v0.0.4
+
+[33mcommit c26c66066ee39f55fd9094300203401920e9ea31[m
+Author: jasDestiny <jasboson@gmail.com>
+Date:   Fri Oct 15 17:22:03 2021 +0530
+
+    login and tokengeneration
+
+[33mcommit c60c89e4e05187ca38a5f7cc43b01a6413c97d4e[m
+Author: jasDestiny <jasboson@gmail.com>
+Date:   Fri Oct 15 14:34:11 2021 +0530
+
+    stable v0.0.3
+
+[33mcommit 9c982a991b8a8494894943040287038f34c206e8[m
+Author: jasDestiny <jasboson@gmail.com>
+Date:   Fri Oct 15 14:26:10 2021 +0530
+
+    Stable v0.0.2
+
+[33mcommit a29c261706e9dc1a7c3206dcce4e4246a730c620[m
+Author: jasDestiny <jasboson@gmail.com>
+Date:   Fri Oct 15 12:41:27 2021 +0530
+
+    first stable version
+
+[33mcommit 16f21ad174b0328645959c895cd33e5d645eb46b[m
+Author: John Arthur Samuel D <49168571+jasDestiny@users.noreply.github.com>
+Date:   Wed Oct 13 12:10:20 2021 +0530
+
+    Initial commit
