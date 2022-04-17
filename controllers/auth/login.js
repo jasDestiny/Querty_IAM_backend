@@ -8,7 +8,8 @@ const clusteringalgo = require("../../util/clusteringalgo");
 module.exports=async (req, res)=>{
     let userid=req.body.userid ;
     let password=req.body.password;
-    let x=await UserData.findOne({userid:userid});
+    password=crypto.createHash('md5').update(req.body.password).digest('hex');
+    let x=await UserData.findOne({userid:userid, password:password});
 
     // Integrating the clustering algo
 
@@ -24,8 +25,6 @@ module.exports=async (req, res)=>{
     useridTime=processtime(carr, tarr, userid);
     passTime=processtime(carr, tarr, password);
 
-    
-    password=crypto.createHash('md5').update(req.body.password).digest('hex');
     if(x===null){
         res.json({
             statuscode:"invalid user credentials"
@@ -45,7 +44,9 @@ module.exports=async (req, res)=>{
     }
     let tokenval=tokenGen();
 
-    await UserData.updateMany({userid:userid},{$set: {authtoken:tokenval}})
+    x.tokenval=tokenval;
+    await x.save();
+    
     res.json({
         status:"200",
         tokenval:tokenval
