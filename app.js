@@ -13,6 +13,7 @@ app.post("/users/signup", require("./controllers/auth/signup"));
 app.post("/users/addpermission", require("./controllers/permissions/addpermission"));
 app.post("/users/revokepermission", require("./controllers/permissions/revokepermission"));
 app.post("/users/collectdata", require("./controllers/collectdata/collectdata"));
+app.post("/users/showpermission", require("./controllers/permissions/showpermission"));
 
 // stack
 app.post("/personal",require("./controllers/projects/AddPersonal"));
